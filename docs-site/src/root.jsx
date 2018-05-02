@@ -38,15 +38,15 @@ export default class Root extends React.Component {
                 className="badge"
               />
             </a>
-            <a href="https://travis-ci.org/deskpro/react-datepicker">
+            <a href="https://travis-ci.org/deskpro/react-datepicker-hijri">
               <img
-                src="https://travis-ci.org/deskpro/react-datepicker.svg?branch=master"
+                src="https://travis-ci.org/deskpro/react-datepicker-hijri.svg?branch=master"
                 className="badge"
               />
             </a>
-            <a href="https://david-dm.org/deskpro/react-datepicker">
+            <a href="https://david-dm.org/deskpro/react-datepicker-hijri">
               <img
-                src="https://david-dm.org/deskpro/react-datepicker.svg"
+                src="https://david-dm.org/deskpro/react-datepicker-hijri.svg"
                 className="badge"
               />
             </a>
@@ -76,7 +76,7 @@ export default class Root extends React.Component {
           <ExampleComponents />
         </div>
 
-        <a href="https://github.com/deskpro/react-datepicker/">
+        <a href="https://github.com/deskpro/react-datepicker-hijri/">
           <img
             className="github-ribbon"
             src="images/ribbon.png"

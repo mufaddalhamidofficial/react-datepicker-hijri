@@ -4,7 +4,7 @@
   "description": "A simple and reusable datepicker component for React",
   "version": "1.5.0",
   "license": "MIT",
-  "homepage": "https://github.com/deskpro/react-datepicker",
+  "homepage": "https://github.com/deskpro/react-datepicker-hijri",
   "main": "lib",
   "module": "es",
   "unpkg": "dist/react-datepicker.min.js",
@@ -25,10 +25,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/deskpro/react-datepicker.git"
+    "url": "git://github.com/deskpro/react-datepicker-hijri.git"
   },
   "bugs": {
-    "url": "https://github.com/deskpro/react-datepicker/issues"
+    "url": "https://github.com/deskpro/react-datepicker-hijri/issues"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
