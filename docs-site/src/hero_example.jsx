@@ -21,7 +21,6 @@ export default class HeroExample extends React.Component {
   render() {
     return (
       <DatePicker
-        dateFormat="DD/MM/YYYY HH:mm"
         autoFocus
         selected={this.state.startDate}
         onChange={this.handleChange}

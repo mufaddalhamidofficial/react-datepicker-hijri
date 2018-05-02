@@ -1,6 +1,6 @@
 import React from "react";
 import DatePicker from "react-datepicker";
-import moment from "moment";
+import moment from "moment-hijri";
 
 export default class ExcludeTimePeriod extends React.Component {
   state = {
@@ -50,7 +50,8 @@ export default class ExcludeTimePeriod extends React.Component {
             maxTime={moment()
               .hours(20)
               .minutes(30)}
-            dateFormat="LLL"/>
+            dateFormat="LLL"
+          />
         </div>
       </div>
     );

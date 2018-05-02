@@ -32,7 +32,8 @@ export default class Month extends React.Component {
     selectsStart: PropTypes.bool,
     showWeekNumbers: PropTypes.bool,
     startDate: PropTypes.object,
-    utcOffset: PropTypes.number
+    utcOffset: PropTypes.number,
+    calendar: PropTypes.string
   };
 
   handleDayClick = (day, event) => {
@@ -57,7 +58,8 @@ export default class Month extends React.Component {
     const day = this.props.day;
     const endOfWeek = utils.addDays(utils.cloneDate(startOfWeek), 6);
     return (
-      utils.isSameMonth(startOfWeek, day) || utils.isSameMonth(endOfWeek, day)
+      utils.isSameMonth(startOfWeek, day, this.props.calendar) ||
+      utils.isSameMonth(endOfWeek, day, this.props.calendar)
     );
   };
 
@@ -65,7 +67,10 @@ export default class Month extends React.Component {
     const weeks = [];
     var isFixedHeight = this.props.fixedHeight;
     let currentWeekStart = utils.getStartOfWeek(
-      utils.getStartOfMonth(utils.cloneDate(this.props.day))
+      utils.getStartOfMonth(
+        utils.cloneDate(this.props.day),
+        this.props.calendar
+      )
     );
     let i = 0;
     let breakAfterNextPush = false;
@@ -75,7 +80,7 @@ export default class Month extends React.Component {
         <Week
           key={i}
           day={currentWeekStart}
-          month={utils.getMonth(this.props.day)}
+          month={utils.getMonth(this.props.day, this.props.calendar)}
           onDayClick={this.handleDayClick}
           onDayMouseEnter={this.handleDayMouseEnter}
           onWeekSelect={this.props.onWeekSelect}
@@ -97,6 +102,7 @@ export default class Month extends React.Component {
           endDate={this.props.endDate}
           dayClassName={this.props.dayClassName}
           utcOffset={this.props.utcOffset}
+          calendar={this.props.calendar}
         />
       );
 

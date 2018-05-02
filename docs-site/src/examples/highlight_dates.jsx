@@ -1,6 +1,6 @@
 import React from "react";
 import DatePicker from "react-datepicker";
-import moment from "moment";
+import moment from "moment-hijri";
 
 export default class highlightDates extends React.Component {
   state = {
@@ -43,7 +43,8 @@ export default class highlightDates extends React.Component {
               moment().subtract(7, "days"),
               moment().add(7, "days")
             ]}
-            placeholderText="This highlights a week ago and a week from today"/>
+            placeholderText="This highlights a week ago and a week from today"
+          />
         </div>
       </div>
     );

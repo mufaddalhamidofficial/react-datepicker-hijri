@@ -110,6 +110,7 @@ export default class Calendar extends React.Component {
     setOpen: PropTypes.func,
     useShortMonthInDropdown: PropTypes.bool,
     showDisabledMonthNavigation: PropTypes.bool,
+    calendar: PropTypes.string,
     previousMonthButtonLabel: PropTypes.string,
     nextMonthButtonLabel: PropTypes.string
   };
@@ -121,7 +122,7 @@ export default class Calendar extends React.Component {
       forceShowMonthNavigation: false,
       timeCaption: "Time",
       previousMonthButtonLabel: "Previous Month",
-      previousMonthButtonLabel: "Next Month"
+      nextMonthButtonLabel: "Next Month"
     };
   }
 
@@ -274,7 +275,7 @@ export default class Calendar extends React.Component {
   };
 
   header = (date = this.state.date) => {
-    const startOfWeek = getStartOfWeek(cloneDate(date));
+    const startOfWeek = getStartOfWeek(cloneDate(date), this.props.calendar);
     const dayNames = [];
     if (this.props.showWeekNumbers) {
       dayNames.push(
@@ -544,6 +545,7 @@ export default class Calendar extends React.Component {
             endDate={this.props.endDate}
             peekNextMonth={this.props.peekNextMonth}
             utcOffset={this.props.utcOffset}
+            calendar={this.props.calendar}
           />
         </div>
       );

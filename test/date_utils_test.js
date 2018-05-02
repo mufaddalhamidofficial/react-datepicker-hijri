@@ -13,7 +13,8 @@ import {
   allDaysDisabledBefore,
   allDaysDisabledAfter,
   getEffectiveMinDate,
-  getEffectiveMaxDate
+  getEffectiveMaxDate,
+  getStartOfWeek
 } from "../src/date_utils";
 
 describe("date_utils", function() {
@@ -294,6 +295,19 @@ describe("date_utils", function() {
       const date2 = newDate("2016-04-01");
       const includeDates = [date1, date2];
       assert(equals(getEffectiveMaxDate({ maxDate, includeDates }), date1));
+    });
+  });
+
+  describe("getStartOfWeek", () => {
+    it("should return the same day on a Saturday", () => {
+      const date1 = newDate("2018-04-14");
+      const date2 = newDate("2018-04-14");
+      expect(getStartOfWeek(date1, "hijri").format()).to.equal(date2.format());
+    });
+    it("should return the previous Saturday on a Sunday", () => {
+      const date1 = newDate("2018-04-15");
+      const date2 = newDate("2018-04-14");
+      expect(getStartOfWeek(date1, "hijri").format()).to.equal(date2.format());
     });
   });
 });
