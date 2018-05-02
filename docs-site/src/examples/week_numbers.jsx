@@ -26,6 +26,7 @@ export default class Default extends React.Component {
     selected={this.state.startDate}
     onChange={this.handleChange}
     showWeekNumbers
+    calendar="hijri"
 />
 `}
           </code>
@@ -35,6 +36,7 @@ export default class Default extends React.Component {
             selected={this.state.startDate}
             onChange={this.handleChange}
             showWeekNumbers
+            calendar="hijri"
           />
         </div>
       </div>

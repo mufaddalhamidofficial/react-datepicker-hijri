@@ -29,6 +29,7 @@ export default class MonthYearDropdown extends React.Component {
   minDate={moment().subtract(6, "month")}
   maxDate={moment().add(6, "month")}
   showMonthYearDropdown
+  calendar="hijri"
 />
 `}
           </code>
@@ -41,6 +42,7 @@ export default class MonthYearDropdown extends React.Component {
             minDate={moment().subtract(6, "month")}
             maxDate={moment().add(6, "month")}
             showMonthYearDropdown
+            calendar="hijri"
           />
         </div>
       </div>

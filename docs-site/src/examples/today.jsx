@@ -26,6 +26,7 @@ export default class Today extends React.Component {
     todayButton={"Vandaag"}
     selected={this.state.startDate}
     onChange={this.handleChange}
+    calendar="hijri"
 />
 `}
           </code>
@@ -35,6 +36,7 @@ export default class Today extends React.Component {
             todayButton="Vandaag"
             selected={this.state.startDate}
             onChange={this.handleChange}
+            calendar="hijri"
           />
         </div>
       </div>

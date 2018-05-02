@@ -27,6 +27,7 @@ export default class MultiMonthInline extends React.Component {
     inline
     onChange={this.handleChange}
     monthsShown={2}
+    calendar="hijri"
 />
 `}
           </code>
@@ -37,6 +38,7 @@ export default class MultiMonthInline extends React.Component {
             inline
             onChange={this.handleChange}
             selected={this.state.startDate}
+            calendar="hijri"
           />
         </div>
       </div>

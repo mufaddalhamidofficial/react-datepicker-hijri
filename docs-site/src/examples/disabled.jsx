@@ -29,6 +29,8 @@ export default class Disabled extends React.Component {
             <strong>{"  disabled={true}"}</strong>
             <br />
             {'  placeholderText="This is disabled"'} />
+            <br />
+            {'  calendar="hijri"'}
           </code>
         </pre>
         <div className="column">

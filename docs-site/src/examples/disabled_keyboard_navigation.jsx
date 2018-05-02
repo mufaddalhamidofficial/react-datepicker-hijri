@@ -30,6 +30,8 @@ export default class DisabledKeyboardNavigation extends React.Component {
             <strong>{"disabledKeyboardNavigation"}</strong>
             <br />
             {'placeholderText="This has disabled keyboard navigation" />'}
+            <br />
+            {'calendar="hijri"'}
           </code>
         </pre>
         <div className="column">

@@ -24,6 +24,8 @@ export default class FixedCalendar extends React.Component {
             {"selected={this.state.startDate}"}
             <br />
             {"onChange={this.handleChange} />"}
+            <br />
+            {'calendar="hijri"'}
           </code>
         </pre>
         <div className="column">

@@ -36,6 +36,8 @@ export default class ExcludeTimePeriod extends React.Component {
               {'  dateFormat="LLL"'}
             </strong>
             <br />
+            {'  calendar="hijri"'}
+            <br />
             {"/>"}
           </code>
         </pre>

@@ -25,6 +25,7 @@ export default class Default extends React.Component {
 <DatePicker
     selected={this.state.startDate}
     onChange={this.handleChange}
+    calendar="hijri"
 />
 `}
           </code>

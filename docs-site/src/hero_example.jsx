@@ -25,6 +25,7 @@ export default class HeroExample extends React.Component {
         selected={this.state.startDate}
         onChange={this.handleChange}
         calendar="hijri"
+        locale="ar"
       />
     );
   }

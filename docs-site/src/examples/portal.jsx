@@ -26,6 +26,7 @@ export default class WithPortal extends React.Component {
     selected={this.state.startDate}
     onChange={this.handleChange}
     withPortal
+    calendar="hijri"
 />
 `}
           </code>
@@ -35,6 +36,7 @@ export default class WithPortal extends React.Component {
             selected={this.state.startDate}
             onChange={this.handleChange}
             withPortal
+            calendar="hijri"
           />
         </div>
       </div>

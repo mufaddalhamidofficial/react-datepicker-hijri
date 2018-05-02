@@ -29,6 +29,7 @@ export default class YearDropdown extends React.Component {
     showMonthDropdown
     showYearDropdown
     dropdownMode="select"
+    calendar="hijri"
 />
 `}
           </code>
@@ -41,6 +42,7 @@ export default class YearDropdown extends React.Component {
             showMonthDropdown
             showYearDropdown
             dropdownMode="select"
+            calendar="hijri"
           />
         </div>
       </div>

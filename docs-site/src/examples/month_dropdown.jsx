@@ -26,6 +26,7 @@ export default class MonthDropdown extends React.Component {
     selected={this.state.startDate}
     onChange={this.handleChange}
     showMonthDropdown
+    calendar="hijri"
 />
 `}
           </code>
@@ -35,6 +36,7 @@ export default class MonthDropdown extends React.Component {
             selected={this.state.startDate}
             onChange={this.handleChange}
             showMonthDropdown
+            calendar="hijri"
           />
         </div>
       </div>

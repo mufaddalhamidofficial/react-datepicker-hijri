@@ -29,6 +29,7 @@ export default class YearDropdown extends React.Component {
             dateFormatCalendar="MMMM"
             scrollableYearDropdown
             yearDropdownItemNumber={15}
+            calendar="hijri"
         />
         `}
           </code>
@@ -41,6 +42,7 @@ export default class YearDropdown extends React.Component {
             dateFormatCalendar="MMMM"
             yearDropdownItemNumber={15}
             scrollableYearDropdown
+            calendar="hijri"
           />
         </div>
       </div>

@@ -429,9 +429,10 @@ export default class Calendar extends React.Component {
         onChange={this.changeYear}
         minDate={this.props.minDate}
         maxDate={this.props.maxDate}
-        year={getYear(this.state.date)}
+        year={getYear(this.state.date, this.props.calendar)}
         scrollableYearDropdown={this.props.scrollableYearDropdown}
         yearDropdownItemNumber={this.props.yearDropdownItemNumber}
+        calendar={this.props.calendar}
       />
     );
   };
@@ -440,14 +441,16 @@ export default class Calendar extends React.Component {
     if (!this.props.showMonthDropdown || overrideHide) {
       return;
     }
+    console.log(this.props.dateFormat);
     return (
       <MonthDropdown
         dropdownMode={this.props.dropdownMode}
         locale={this.props.locale}
         dateFormat={this.props.dateFormat}
         onChange={this.changeMonth}
-        month={getMonth(this.state.date)}
+        month={getMonth(this.state.date, this.props.calendar)}
         useShortMonthInDropdown={this.props.useShortMonthInDropdown}
+        calendar={this.props.calendar}
       />
     );
   };

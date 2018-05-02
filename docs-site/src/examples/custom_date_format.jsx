@@ -27,7 +27,9 @@ export default class CustomDateFormat extends React.Component {
             <br />
             {"selected={this.state.startDate}"}
             <br />
-            {"onChange={this.handleChange} />"}
+            {"onChange={this.handleChange}"}
+            <br />
+            {'calendar="hijri" />'}
           </code>
         </pre>
         <div className="column">

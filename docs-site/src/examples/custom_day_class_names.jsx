@@ -26,6 +26,7 @@ export default class CustomDayClassNames extends React.Component {
   selected={this.state.startDate}
   onChange={this.handleChange}
   dayClassName={date => date.date() < Math.random() * 31 ? 'random' : undefined} />
+  calendar="hijri"
 />
 `}
           </code>

@@ -23,12 +23,12 @@ export default class Inline extends React.Component {
         <pre className="column example__code">
           <code className="jsx">
             {`
-<DatePicker
-    inline
-    selected={this.state.startDate}
-    onChange={this.handleChange}
-/>
-`}
+          <DatePicker
+            inline
+            selected={this.state.startDate}
+            onChange={this.handleChange}
+            calendar="hijri"/>
+          `}
           </code>
         </pre>
         <div className="column">

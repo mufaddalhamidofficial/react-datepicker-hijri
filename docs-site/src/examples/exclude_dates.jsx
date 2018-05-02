@@ -31,6 +31,8 @@ export default class ExcludeDates extends React.Component {
             {
               '  placeholderText="Select a date other than today or yesterday" />'
             }
+            <br />
+            {'  calendar="hijri"'}
           </code>
         </pre>
         <div className="column">

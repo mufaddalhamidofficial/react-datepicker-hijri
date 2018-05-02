@@ -27,6 +27,7 @@ export default class MultiMonthDrp extends React.Component {
     onChange={this.handleChange}
     showYearDropdown
     monthsShown={2}
+    calendar="hijri"
 />
 `}
           </code>
@@ -37,6 +38,7 @@ export default class MultiMonthDrp extends React.Component {
             onChange={this.handleChange}
             showYearDropdown
             selected={this.state.startDate}
+            calendar="hijri"
           />
         </div>
       </div>

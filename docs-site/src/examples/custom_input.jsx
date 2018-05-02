@@ -62,7 +62,9 @@ ExampleCustomInput.propTypes = {
 <DatePicker
   customInput={<ExampleCustomInput />}
   selected={this.state.startDate}
-  onChange={this.handleChange} />
+  onChange={this.handleChange}
+  calendar="hijri"
+  />
 `}
           </code>
         </pre>

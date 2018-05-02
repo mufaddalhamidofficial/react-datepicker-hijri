@@ -23,7 +23,7 @@ export default class CustomStartDate extends React.Component {
             <br />
             {"  onChange={this.handleChange}"}
             <br />
-            <strong>{'  locale="en-gb"'}</strong>
+            <strong>{'  locale="ar"'}</strong>
             <br />
             {'  placeholderText="Weeks start on Monday" />'}
           </code>
@@ -32,7 +32,7 @@ export default class CustomStartDate extends React.Component {
           <DatePicker
             selected={this.state.startDate}
             onChange={this.handleChange}
-            locale="en-gb"
+            locale="ar"
             placeholderText="Weeks start on Monday"
             calendar="hijri"
           />

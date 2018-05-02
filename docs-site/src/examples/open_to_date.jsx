@@ -23,6 +23,7 @@ export default class OpenToDate extends React.Component {
     openToDate={moment("1993-09-28")}
     selected={this.state.startDate}
     onChange={this.handleChange}
+    calendar="hijri"
 />
 `}
           </code>
@@ -32,6 +33,7 @@ export default class OpenToDate extends React.Component {
             openToDate={moment("1993-09-28")}
             selected={this.state.startDate}
             onChange={this.handleChange}
+            calendar="hijri"
           />
         </div>
       </div>
