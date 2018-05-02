@@ -39,6 +39,7 @@ export default class ExcludeDates extends React.Component {
             onChange={this.handleChange}
             excludeDates={[moment(), moment().subtract(1, "days")]}
             placeholderText="Select a date other than today or yesterday"
+            calendar="hijri"
           />
         </div>
       </div>

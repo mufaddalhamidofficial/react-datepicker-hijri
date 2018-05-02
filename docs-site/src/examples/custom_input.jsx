@@ -71,6 +71,7 @@ ExampleCustomInput.propTypes = {
             customInput={<ExampleCustomInput />}
             selected={this.state.startDate}
             onChange={this.handleChange}
+            calendar="hijri"
           />
         </div>
       </div>

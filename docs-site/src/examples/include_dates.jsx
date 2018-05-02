@@ -37,6 +37,7 @@ export default class includeDates extends React.Component {
             onChange={this.handleChange}
             includeDates={[moment(), moment().add(1, "days")]}
             placeholderText="This only includes today and tomorrow"
+            calendar="hijri"
           />
         </div>
       </div>

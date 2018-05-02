@@ -59,6 +59,7 @@ export default class ExcludeTimes extends React.Component {
                 .minutes(30)
             ]}
             dateFormat="LLL"
+            calendar="hijri"
           />
         </div>
       </div>

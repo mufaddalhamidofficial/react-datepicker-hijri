@@ -38,7 +38,9 @@ export default class FilterDates extends React.Component {
             selected={this.state.date}
             onChange={this.handleChange}
             filterDate={this.isWeekday}
-            placeholderText="Select a weekday"/>
+            placeholderText="Select a weekday"
+            calendar="hijri"
+          />
         </div>
       </div>
     );

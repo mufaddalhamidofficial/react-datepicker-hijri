@@ -95,6 +95,7 @@ export default class highlightDatesRanges extends React.Component {
             onChange={this.handleChange}
             highlightDates={this.highlightWithRanges}
             placeholderText="This highlight two ranges with custom classes"
+            calendar="hijri"
           />
         </div>
       </div>

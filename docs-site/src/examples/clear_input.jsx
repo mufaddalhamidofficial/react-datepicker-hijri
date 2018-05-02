@@ -35,6 +35,7 @@ export default class ClearInput extends React.Component {
             onChange={this.handleChange}
             isClearable
             placeholderText="I have been cleared!"
+            calendar="hijri"
           />
         </div>
       </div>

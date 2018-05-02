@@ -36,7 +36,9 @@ export default class Disabled extends React.Component {
             selected={this.state.startDate}
             onChange={this.handleChange}
             disabled
-            placeholderText="This is disabled"/>
+            placeholderText="This is disabled"
+            calendar="hijri"
+          />
         </div>
       </div>
     );

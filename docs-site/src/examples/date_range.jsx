@@ -57,6 +57,7 @@ export default class DateRange extends React.Component {
             startDate={this.state.startDate}
             endDate={this.state.endDate}
             onChange={this.handleChangeStart}
+            calendar="hijri"
           />
           <DatePicker
             selected={this.state.endDate}
@@ -64,6 +65,7 @@ export default class DateRange extends React.Component {
             startDate={this.state.startDate}
             endDate={this.state.endDate}
             onChange={this.handleChangeEnd}
+            calendar="hijri"
           />
         </div>
       </div>

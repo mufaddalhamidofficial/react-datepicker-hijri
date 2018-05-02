@@ -36,6 +36,7 @@ export default class Inline extends React.Component {
             inline
             selected={this.state.startDate}
             onChange={this.handleChange}
+            calendar="hijri"
           />
         </div>
       </div>

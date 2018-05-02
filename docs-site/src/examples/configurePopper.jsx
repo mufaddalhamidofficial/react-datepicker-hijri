@@ -59,6 +59,7 @@ export default class ConfigurePopper extends React.Component {
                 boundariesElement: "viewport"
               }
             }}
+            calendar="hijri"
           />
         </div>
       </div>

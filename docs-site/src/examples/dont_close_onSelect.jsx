@@ -35,6 +35,7 @@ export default class DontCloseOnSelect extends React.Component {
             selected={this.state.startDate}
             onChange={this.handleChange}
             shouldCloseOnSelect={false}
+            calendar="hijri"
           />
         </div>
       </div>

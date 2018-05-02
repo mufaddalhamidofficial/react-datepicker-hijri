@@ -35,6 +35,7 @@ export default class CustomClassName extends React.Component {
             selected={this.state.startDate}
             onChange={this.handleChange}
             className="red-border"
+            calendar="hijri"
           />
         </div>
       </div>

@@ -55,6 +55,7 @@ export default class InjectTimes extends React.Component {
                 .minutes(59)
             ]}
             dateFormat="LLL"
+            calendar="hijri"
           />
         </div>
       </div>

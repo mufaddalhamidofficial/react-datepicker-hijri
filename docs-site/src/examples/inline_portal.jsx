@@ -69,6 +69,7 @@ toggleCalendar (e) {
               onChange={this.handleChange}
               withPortal
               inline
+              calendar="hijri"
             />
           )}
         </div>

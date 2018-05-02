@@ -33,6 +33,7 @@ export default class CustomCalendarClassName extends React.Component {
             selected={this.state.startDate}
             onChange={this.handleChange}
             calendarClassName="rasta-stripes"
+            calendar="hijri"
           />
         </div>
       </div>

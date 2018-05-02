@@ -7,7 +7,7 @@ npm run build
 mkdir -p tmp
 
 if [ ! -d "tmp/gh-pages" ]; then
-  git clone git@github.com:Hacker0x01/react-datepicker.git --branch gh-pages --single-branch tmp/gh-pages
+  git clone git@github.com:deskpro/react-datepicker.git --branch gh-pages --single-branch tmp/gh-pages
 fi
 
 cd tmp/gh-pages

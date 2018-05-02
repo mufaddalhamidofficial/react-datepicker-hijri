@@ -30,7 +30,9 @@ export default class FixedCalendar extends React.Component {
           <DatePicker
             fixedHeight
             selected={this.state.startDate}
-            onChange={this.handleChange}/>
+            onChange={this.handleChange}
+            calendar="hijri"
+          />
         </div>
       </div>
     );

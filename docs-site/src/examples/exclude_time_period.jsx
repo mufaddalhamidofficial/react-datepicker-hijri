@@ -51,6 +51,7 @@ export default class ExcludeTimePeriod extends React.Component {
               .hours(20)
               .minutes(30)}
             dateFormat="LLL"
+            calendar="hijri"
           />
         </div>
       </div>

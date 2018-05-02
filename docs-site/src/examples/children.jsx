@@ -37,6 +37,7 @@ export default class Children extends React.Component {
           <DatePicker
             selected={this.state.startDate}
             onChange={this.handleChange}
+            calendar="hijri"
           >
             <div style={{ color: "red" }}>
               Don't forget to check the weather!

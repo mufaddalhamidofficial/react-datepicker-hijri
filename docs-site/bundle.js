@@ -52957,7 +52957,8 @@
 	        _react2.default.createElement(_reactDatepicker2.default, {
 	          dateFormat: "YYYY/MM/DD",
 	          selected: this.state.startDate,
-	          onChange: this.handleChange
+	          onChange: this.handleChange,
+	          calendar: "hijri"
 	        })
 	      )
 	    );
@@ -53035,7 +53036,8 @@
 	        _react2.default.createElement(_reactDatepicker2.default, {
 	          selected: this.state.startDate,
 	          onChange: this.handleChange,
-	          className: "red-border"
+	          className: "red-border",
+	          calendar: "hijri"
 	        })
 	      )
 	    );
@@ -53113,7 +53115,8 @@
 	        _react2.default.createElement(_reactDatepicker2.default, {
 	          selected: this.state.startDate,
 	          onChange: this.handleChange,
-	          calendarClassName: "rasta-stripes"
+	          calendarClassName: "rasta-stripes",
+	          calendar: "hijri"
 	        })
 	      )
 	    );
@@ -53193,7 +53196,8 @@
 	          onChange: this.handleChange,
 	          dayClassName: function dayClassName(date) {
 	            return date.date() < Math.random() * 31 ? "random" : undefined;
-	          }
+	          },
+	          calendar: "hijri"
 	        })
 	      )
 	    );
@@ -53422,7 +53426,9 @@
 	          selected: this.state.startDate,
 	          onChange: this.handleChange,
 	          locale: "en-gb",
-	          placeholderText: "Weeks start on Monday" })
+	          placeholderText: "Weeks start on Monday",
+	          calendar: "hijri"
+	        })
 	      )
 	    );
 	  };
@@ -53513,7 +53519,8 @@
 	          selected: this.state.startDate,
 	          onChange: this.handleChange,
 	          excludeDates: [(0, _momentHijri2.default)(), (0, _momentHijri2.default)().subtract(1, "days")],
-	          placeholderText: "Select a date other than today or yesterday"
+	          placeholderText: "Select a date other than today or yesterday",
+	          calendar: "hijri"
 	        })
 	      )
 	    );
@@ -53605,7 +53612,8 @@
 	          selected: this.state.startDate,
 	          onChange: this.handleChange,
 	          highlightDates: [(0, _momentHijri2.default)().subtract(7, "days"), (0, _momentHijri2.default)().add(7, "days")],
-	          placeholderText: "This highlights a week ago and a week from today"
+	          placeholderText: "This highlights a week ago and a week from today",
+	          calendar: "hijri"
 	        })
 	      )
 	    );
@@ -53740,7 +53748,8 @@
 	          selected: this.state.startDate,
 	          onChange: this.handleChange,
 	          highlightDates: this.highlightWithRanges,
-	          placeholderText: "This highlight two ranges with custom classes"
+	          placeholderText: "This highlight two ranges with custom classes",
+	          calendar: "hijri"
 	        })
 	      )
 	    );
@@ -53832,7 +53841,8 @@
 	          selected: this.state.startDate,
 	          onChange: this.handleChange,
 	          includeDates: [(0, _momentHijri2.default)(), (0, _momentHijri2.default)().add(1, "days")],
-	          placeholderText: "This only includes today and tomorrow"
+	          placeholderText: "This only includes today and tomorrow",
+	          calendar: "hijri"
 	        })
 	      )
 	    );
@@ -53923,7 +53933,9 @@
 	          selected: this.state.date,
 	          onChange: this.handleChange,
 	          filterDate: this.isWeekday,
-	          placeholderText: "Select a weekday" })
+	          placeholderText: "Select a weekday",
+	          calendar: "hijri"
+	        })
 	      )
 	    );
 	  };
@@ -54010,7 +54022,9 @@
 	          selected: this.state.startDate,
 	          onChange: this.handleChange,
 	          disabled: true,
-	          placeholderText: "This is disabled" })
+	          placeholderText: "This is disabled",
+	          calendar: "hijri"
+	        })
 	      )
 	    );
 	  };
@@ -54100,7 +54114,8 @@
 	          selected: this.state.startDate,
 	          onChange: this.handleChange,
 	          disabledKeyboardNavigation: true,
-	          placeholderText: "This has disabled keyboard navigation"
+	          placeholderText: "This has disabled keyboard navigation",
+	          calendar: "hijri"
 	        })
 	      )
 	    );
@@ -54179,7 +54194,8 @@
 	          selected: this.state.startDate,
 	          onChange: this.handleChange,
 	          isClearable: true,
-	          placeholderText: "I have been cleared!"
+	          placeholderText: "I have been cleared!",
+	          calendar: "hijri"
 	        })
 	      )
 	    );
@@ -54371,7 +54387,8 @@
 	              escapeWithReference: false,
 	              boundariesElement: "viewport"
 	            }
-	          }
+	          },
+	          calendar: "hijri"
 	        })
 	      )
 	    );
@@ -54468,14 +54485,16 @@
 	          selectsStart: true,
 	          startDate: this.state.startDate,
 	          endDate: this.state.endDate,
-	          onChange: this.handleChangeStart
+	          onChange: this.handleChangeStart,
+	          calendar: "hijri"
 	        }),
 	        _react2.default.createElement(_reactDatepicker2.default, {
 	          selected: this.state.endDate,
 	          selectsEnd: true,
 	          startDate: this.state.startDate,
 	          endDate: this.state.endDate,
-	          onChange: this.handleChangeEnd
+	          onChange: this.handleChangeEnd,
+	          calendar: "hijri"
 	        })
 	      )
 	    );
@@ -54556,7 +54575,8 @@
 	          onChange: this.handleChange,
 	          minDate: (0, _momentHijri2.default)(),
 	          maxDate: (0, _momentHijri2.default)().add(5, "months"),
-	          showDisabledMonthNavigation: true
+	          showDisabledMonthNavigation: true,
+	          calendar: "hijri"
 	        })
 	      )
 	    );
@@ -55340,7 +55360,8 @@
 	        _react2.default.createElement(_reactDatepicker2.default, {
 	          inline: true,
 	          selected: this.state.startDate,
-	          onChange: this.handleChange
+	          onChange: this.handleChange,
+	          calendar: "hijri"
 	        })
 	      )
 	    );
@@ -55500,7 +55521,9 @@
 	        _react2.default.createElement(_reactDatepicker2.default, {
 	          fixedHeight: true,
 	          selected: this.state.startDate,
-	          onChange: this.handleChange })
+	          onChange: this.handleChange,
+	          calendar: "hijri"
+	        })
 	      )
 	    );
 	  };
@@ -55685,7 +55708,8 @@
 	        _react2.default.createElement(_reactDatepicker2.default, {
 	          customInput: _react2.default.createElement(ExampleCustomInput, null),
 	          selected: this.state.startDate,
-	          onChange: this.handleChange
+	          onChange: this.handleChange,
+	          calendar: "hijri"
 	        })
 	      )
 	    );
@@ -56000,7 +56024,8 @@
 	          _reactDatepicker2.default,
 	          {
 	            selected: this.state.startDate,
-	            onChange: this.handleChange
+	            onChange: this.handleChange,
+	            calendar: "hijri"
 	          },
 	          _react2.default.createElement(
 	            "div",
@@ -56289,7 +56314,8 @@
 	          selected: this.state.startDate,
 	          onChange: this.handleChange,
 	          withPortal: true,
-	          inline: true
+	          inline: true,
+	          calendar: "hijri"
 	        })
 	      )
 	    );
@@ -56743,7 +56769,8 @@
 	          onChange: this.handleChange,
 	          showTimeSelect: true,
 	          excludeTimes: [(0, _momentHijri2.default)().hours(17).minutes(0), (0, _momentHijri2.default)().hours(18).minutes(30), (0, _momentHijri2.default)().hours(19).minutes(30), (0, _momentHijri2.default)().hours(17).minutes(30)],
-	          dateFormat: "LLL"
+	          dateFormat: "LLL",
+	          calendar: "hijri"
 	        })
 	      )
 	    );
@@ -56843,7 +56870,8 @@
 	          showTimeSelect: true,
 	          minTime: (0, _momentHijri2.default)().hours(17).minutes(0),
 	          maxTime: (0, _momentHijri2.default)().hours(20).minutes(30),
-	          dateFormat: "LLL"
+	          dateFormat: "LLL",
+	          calendar: "hijri"
 	        })
 	      )
 	    );
@@ -56944,7 +56972,8 @@
 	          onChange: this.handleChange,
 	          showTimeSelect: true,
 	          includeTimes: [(0, _momentHijri2.default)().hours(17).minutes(0), (0, _momentHijri2.default)().hours(18).minutes(30), (0, _momentHijri2.default)().hours(19).minutes(30), (0, _momentHijri2.default)().hours(17).minutes(30)],
-	          dateFormat: "LLL"
+	          dateFormat: "LLL",
+	          calendar: "hijri"
 	        })
 	      )
 	    );
@@ -57032,7 +57061,8 @@
 	          showTimeSelect: true,
 	          timeFormat: "HH:mm",
 	          injectTimes: [(0, _momentHijri2.default)().hours(0).minutes(1), (0, _momentHijri2.default)().hours(12).minutes(5), (0, _momentHijri2.default)().hours(23).minutes(59)],
-	          dateFormat: "LLL"
+	          dateFormat: "LLL",
+	          calendar: "hijri"
 	        })
 	      )
 	    );
@@ -57110,7 +57140,8 @@
 	        _react2.default.createElement(_reactDatepicker2.default, {
 	          selected: this.state.startDate,
 	          onChange: this.handleChange,
-	          shouldCloseOnSelect: false
+	          shouldCloseOnSelect: false,
+	          calendar: "hijri"
 	        })
 	      )
 	    );

@@ -37,6 +37,7 @@ export default class DateRangeWithShowDisabledNavigation extends React.Component
             minDate={moment()}
             maxDate={moment().add(5, "months")}
             showDisabledMonthNavigation
+            calendar="hijri"
           />
         </div>
       </div>

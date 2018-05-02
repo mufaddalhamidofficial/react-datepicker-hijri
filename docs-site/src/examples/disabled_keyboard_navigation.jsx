@@ -38,6 +38,7 @@ export default class DisabledKeyboardNavigation extends React.Component {
             onChange={this.handleChange}
             disabledKeyboardNavigation
             placeholderText="This has disabled keyboard navigation"
+            calendar="hijri"
           />
         </div>
       </div>
