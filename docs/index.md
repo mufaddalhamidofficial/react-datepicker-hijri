@@ -8,6 +8,7 @@ General datepicker component.
 | `allowSameDay`                | `bool`                         | `false`         |             |
 | `autoComplete`                | `string`                       |                 |             |
 | `autoFocus`                   | `bool`                         |                 |             |
+| `calendar`                    | `string`                       |                 |             |
 | `calendarClassName`           | `string`                       |                 |             |
 | `children`                    | `node`                         |                 |             |
 | `className`                   | `string`                       |                 |             |
@@ -26,6 +27,7 @@ General datepicker component.
 | `filterDate`                  | `func`                         |                 |             |
 | `fixedHeight`                 | `bool`                         |                 |             |
 | `forceShowMonthNavigation`    | `bool`                         |                 |             |
+| `formatWeekDay`               | `func`                         |                 |             |
 | `formatWeekNumber`            | `func`                         |                 |             |
 | `highlightDates`              | `array`                        |                 |             |
 | `id`                          | `string`                       |                 |             |
