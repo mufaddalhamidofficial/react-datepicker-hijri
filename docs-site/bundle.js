@@ -9843,17 +9843,17 @@
 	          ),
 	          _react2.default.createElement(
 	            "a",
-	            { href: "https://travis-ci.org/deskpro/react-datepicker" },
+	            { href: "https://travis-ci.org/deskpro/react-datepicker-hijri" },
 	            _react2.default.createElement("img", {
-	              src: "https://travis-ci.org/deskpro/react-datepicker.svg?branch=master",
+	              src: "https://travis-ci.org/deskpro/react-datepicker-hijri.svg?branch=master",
 	              className: "badge"
 	            })
 	          ),
 	          _react2.default.createElement(
 	            "a",
-	            { href: "https://david-dm.org/deskpro/react-datepicker" },
+	            { href: "https://david-dm.org/deskpro/react-datepicker-hijri" },
 	            _react2.default.createElement("img", {
-	              src: "https://david-dm.org/deskpro/react-datepicker.svg",
+	              src: "https://david-dm.org/deskpro/react-datepicker-hijri.svg",
 	              className: "badge"
 	            })
 	          ),
@@ -9900,7 +9900,7 @@
 	      ),
 	      _react2.default.createElement(
 	        "a",
-	        { href: "https://github.com/deskpro/react-datepicker/" },
+	        { href: "https://github.com/deskpro/react-datepicker-hijri/" },
 	        _react2.default.createElement("img", {
 	          className: "github-ribbon",
 	          src: "images/ribbon.png",
