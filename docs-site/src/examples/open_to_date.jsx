@@ -1,6 +1,6 @@
 import React from "react";
 import DatePicker from "react-datepicker";
-import moment from "moment";
+import moment from "moment-hijri";
 
 export default class OpenToDate extends React.Component {
   state = {
@@ -31,7 +31,8 @@ export default class OpenToDate extends React.Component {
           <DatePicker
             openToDate={moment("1993-09-28")}
             selected={this.state.startDate}
-            onChange={this.handleChange}/>
+            onChange={this.handleChange}
+          />
         </div>
       </div>
     );

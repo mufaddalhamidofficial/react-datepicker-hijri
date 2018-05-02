@@ -1,6 +1,6 @@
 import React from "react";
 import DatePicker from "react-datepicker";
-import moment from "moment";
+import moment from "moment-hijri";
 
 export default class highlightDatesRanges extends React.Component {
   constructor(props) {
@@ -94,7 +94,8 @@ export default class highlightDatesRanges extends React.Component {
             selected={this.state.startDate}
             onChange={this.handleChange}
             highlightDates={this.highlightWithRanges}
-            placeholderText="This highlight two ranges with custom classes"/>
+            placeholderText="This highlight two ranges with custom classes"
+          />
         </div>
       </div>
     );

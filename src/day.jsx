@@ -28,7 +28,8 @@ export default class Day extends React.Component {
     selectsEnd: PropTypes.bool,
     selectsStart: PropTypes.bool,
     startDate: PropTypes.object,
-    utcOffset: PropTypes.number
+    utcOffset: PropTypes.number,
+    calendar: PropTypes.string
   };
 
   handleClick = event => {
@@ -149,7 +150,7 @@ export default class Day extends React.Component {
   isOutsideMonth = () => {
     return (
       this.props.month !== undefined &&
-      this.props.month !== getMonth(this.props.day)
+      this.props.month !== getMonth(this.props.day, this.props.calendar)
     );
   };
 
@@ -187,10 +188,10 @@ export default class Day extends React.Component {
         className={this.getClassNames(this.props.day)}
         onClick={this.handleClick}
         onMouseEnter={this.handleMouseEnter}
-        aria-label={`day-${getDate(this.props.day)}`}
+        aria-label={`day-${getDate(this.props.day, this.props.calendar)}`}
         role="option"
       >
-        {getDate(this.props.day)}
+        {getDate(this.props.day, this.props.calendar)}
       </div>
     );
   }

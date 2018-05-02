@@ -1,6 +1,6 @@
 import React from "react";
 import DatePicker from "react-datepicker";
-import moment from "moment";
+import moment from "moment-hijri";
 
 export default class WithPortal extends React.Component {
   constructor(props) {
@@ -34,7 +34,8 @@ export default class WithPortal extends React.Component {
           <DatePicker
             selected={this.state.startDate}
             onChange={this.handleChange}
-            withPortal/>
+            withPortal
+          />
         </div>
       </div>
     );

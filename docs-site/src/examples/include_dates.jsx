@@ -1,6 +1,6 @@
 import React from "react";
 import DatePicker from "react-datepicker";
-import moment from "moment";
+import moment from "moment-hijri";
 
 export default class includeDates extends React.Component {
   state = {
@@ -36,7 +36,8 @@ export default class includeDates extends React.Component {
             selected={this.state.startDate}
             onChange={this.handleChange}
             includeDates={[moment(), moment().add(1, "days")]}
-            placeholderText="This only includes today and tomorrow"/>
+            placeholderText="This only includes today and tomorrow"
+          />
         </div>
       </div>
     );

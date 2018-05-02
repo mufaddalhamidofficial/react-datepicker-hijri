@@ -1,6 +1,6 @@
 import React from "react";
 import DatePicker from "react-datepicker";
-import moment from "moment";
+import moment from "moment-hijri";
 
 export default class RawChanges extends React.Component {
   state = {
@@ -46,7 +46,8 @@ handleChangeRaw(value) {
             selected={this.state.startDate}
             onChange={this.handleChange}
             placeholderText="Enter &quot;tomorrow&quot;"
-            onChangeRaw={event => this.handleChangeRaw(event.target.value)}/>
+            onChangeRaw={event => this.handleChangeRaw(event.target.value)}
+          />
         </div>
       </div>
     );

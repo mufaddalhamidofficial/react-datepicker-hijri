@@ -1,6 +1,6 @@
 import React from "react";
 import DatePicker from "react-datepicker";
-import moment from "moment";
+import moment from "moment-hijri";
 
 export default class ShowTime extends React.Component {
   constructor(props) {
@@ -43,7 +43,9 @@ export default class ShowTime extends React.Component {
             timeFormat="HH:mm"
             timeIntervals={15}
             timeCaption="time"
-            dateFormat="LLL"/>
+            dateFormat="LLL"
+            calendar="hijri"
+          />
         </div>
       </div>
     );

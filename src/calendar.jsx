@@ -107,7 +107,8 @@ export default class Calendar extends React.Component {
     yearDropdownItemNumber: PropTypes.number,
     setOpen: PropTypes.func,
     useShortMonthInDropdown: PropTypes.bool,
-    showDisabledMonthNavigation: PropTypes.bool
+    showDisabledMonthNavigation: PropTypes.bool,
+    calendar: PropTypes.string
   };
 
   static get defaultProps() {
@@ -268,7 +269,7 @@ export default class Calendar extends React.Component {
   };
 
   header = (date = this.state.date) => {
-    const startOfWeek = getStartOfWeek(cloneDate(date));
+    const startOfWeek = getStartOfWeek(cloneDate(date), this.props.calendar);
     const dayNames = [];
     if (this.props.showWeekNumbers) {
       dayNames.push(
@@ -293,12 +294,16 @@ export default class Calendar extends React.Component {
   };
 
   formatWeekday = (localeData, day) => {
-      if (this.props.formatWeekDay) {
-          return getFormattedWeekdayInLocale(localeData, day, this.props.formatWeekDay);
-      }
-      return this.props.useWeekdaysShort
-          ? getWeekdayShortInLocale(localeData, day)
-          : getWeekdayMinInLocale(localeData, day);
+    if (this.props.formatWeekDay) {
+      return getFormattedWeekdayInLocale(
+        localeData,
+        day,
+        this.props.formatWeekDay
+      );
+    }
+    return this.props.useWeekdaysShort
+      ? getWeekdayShortInLocale(localeData, day)
+      : getWeekdayMinInLocale(localeData, day);
   };
 
   renderPreviousMonthButton = () => {
@@ -530,6 +535,7 @@ export default class Calendar extends React.Component {
             endDate={this.props.endDate}
             peekNextMonth={this.props.peekNextMonth}
             utcOffset={this.props.utcOffset}
+            calendar={this.props.calendar}
           />
         </div>
       );

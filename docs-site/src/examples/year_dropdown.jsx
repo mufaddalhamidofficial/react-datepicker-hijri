@@ -1,6 +1,6 @@
 import React from "react";
 import DatePicker from "react-datepicker";
-import moment from "moment";
+import moment from "moment-hijri";
 
 export default class YearDropdown extends React.Component {
   constructor(props) {
@@ -40,7 +40,8 @@ export default class YearDropdown extends React.Component {
             showYearDropdown
             dateFormatCalendar="MMMM"
             yearDropdownItemNumber={15}
-            scrollableYearDropdown/>
+            scrollableYearDropdown
+          />
         </div>
       </div>
     );

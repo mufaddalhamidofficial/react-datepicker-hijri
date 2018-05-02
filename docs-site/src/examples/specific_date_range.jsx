@@ -1,6 +1,6 @@
 import React from "react";
 import DatePicker from "react-datepicker";
-import moment from "moment";
+import moment from "moment-hijri";
 
 export default class SpecificDateRange extends React.Component {
   state = {
@@ -41,7 +41,8 @@ export default class SpecificDateRange extends React.Component {
             onChange={this.handleChange}
             minDate={moment()}
             maxDate={moment().add(5, "days")}
-            placeholderText="Select a date between today and 5 days in the future"/>
+            placeholderText="Select a date between today and 5 days in the future"
+          />
         </div>
       </div>
     );
