@@ -9747,7 +9747,7 @@
 /* 342 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	exports.__esModule = true;
 
@@ -9786,102 +9786,126 @@
 
 	  Root.prototype.render = function render() {
 	    return _react2.default.createElement(
-	      'div',
+	      "div",
 	      null,
 	      _react2.default.createElement(
-	        'div',
-	        { className: 'hero' },
+	        "div",
+	        { className: "hero" },
 	        _react2.default.createElement(
-	          'div',
-	          { className: 'hero__content' },
+	          "div",
+	          { className: "hero__content" },
 	          _react2.default.createElement(
-	            'h1',
-	            { className: 'hero__title' },
-	            'ReactJS Datepicker'
+	            "h1",
+	            { className: "hero__title" },
+	            "ReactJS Datepicker"
 	          ),
 	          _react2.default.createElement(
-	            'div',
-	            { className: 'hero__crafted-by' },
+	            "div",
+	            { className: "hero__crafted-by" },
 	            _react2.default.createElement(
-	              'a',
-	              { href: 'https://hackerone.com', className: 'hero__crafted-by-link' },
-	              'Crafted by ',
-	              _react2.default.createElement('img', { src: 'images/logo.png', className: 'hero__image', alt: 'HackerOne', title: 'HackerOne' })
+	              "a",
+	              { href: "https://hackerone.com", className: "hero__crafted-by-link" },
+	              "Crafted by",
+	              " ",
+	              _react2.default.createElement("img", {
+	                src: "images/logo.png",
+	                className: "hero__image",
+	                alt: "HackerOne",
+	                title: "HackerOne"
+	              })
 	            )
 	          ),
 	          _react2.default.createElement(
-	            'div',
-	            { className: 'hero__example' },
+	            "div",
+	            { className: "hero__example" },
 	            _react2.default.createElement(_hero_example2.default, null)
 	          )
 	        )
 	      ),
 	      _react2.default.createElement(
-	        'div',
-	        { className: 'wrapper' },
+	        "div",
+	        { className: "wrapper" },
 	        _react2.default.createElement(
-	          'h1',
+	          "h1",
 	          null,
-	          'ReactJS Datepicker'
+	          "ReactJS Datepicker"
 	        ),
 	        _react2.default.createElement(
-	          'p',
-	          { className: 'badges' },
+	          "p",
+	          { className: "badges" },
 	          _react2.default.createElement(
-	            'a',
-	            { href: 'https://npmjs.org/package/react-datepicker' },
-	            _react2.default.createElement('img', { src: 'https://badge.fury.io/js/react-datepicker.svg', className: 'badge' })
+	            "a",
+	            { href: "https://npmjs.org/package/@deskpro/react-datepicker-hijri" },
+	            _react2.default.createElement("img", {
+	              src: "https://badge.fury.io/js/@deskpro/react-datepicker-hijri.svg",
+	              className: "badge"
+	            })
 	          ),
 	          _react2.default.createElement(
-	            'a',
-	            { href: 'https://travis-ci.org/Hacker0x01/react-datepicker' },
-	            _react2.default.createElement('img', { src: 'https://travis-ci.org/Hacker0x01/react-datepicker.svg?branch=master', className: 'badge' })
+	            "a",
+	            { href: "https://travis-ci.org/deskpro/react-datepicker" },
+	            _react2.default.createElement("img", {
+	              src: "https://travis-ci.org/deskpro/react-datepicker.svg?branch=master",
+	              className: "badge"
+	            })
 	          ),
 	          _react2.default.createElement(
-	            'a',
-	            { href: 'https://david-dm.org/Hacker0x01/react-datepicker' },
-	            _react2.default.createElement('img', { src: 'https://david-dm.org/Hacker0x01/react-datepicker.svg', className: 'badge' })
+	            "a",
+	            { href: "https://david-dm.org/deskpro/react-datepicker" },
+	            _react2.default.createElement("img", {
+	              src: "https://david-dm.org/deskpro/react-datepicker.svg",
+	              className: "badge"
+	            })
 	          ),
 	          _react2.default.createElement(
-	            'a',
-	            { href: 'https://npmjs.org/package/react-datepicker' + '?__hstc=72727564.ca821b01b5b29b1831f0936a681f0483.1428679773810.1435582678273.1438354735499.5' + '&__hssc=72727564.1.1438354735499' + '&__hsfp=2497064007' },
-	            _react2.default.createElement('img', { src: 'https://img.shields.io/npm/dm/react-datepicker.svg', className: 'badge' })
+	            "a",
+	            {
+	              href: "https://npmjs.org/package/@deskpro/react-datepicker-hijri" + "?__hstc=72727564.ca821b01b5b29b1831f0936a681f0483.1428679773810.1435582678273.1438354735499.5" + "&__hssc=72727564.1.1438354735499" + "&__hsfp=2497064007"
+	            },
+	            _react2.default.createElement("img", {
+	              src: "https://img.shields.io/npm/dm/@deskpro/react-datepicker-hijri.svg",
+	              className: "badge"
+	            })
 	          )
 	        ),
 	        _react2.default.createElement(
-	          'p',
+	          "p",
 	          null,
-	          'A simple and reusable datepicker component for React.'
+	          "A simple and reusable datepicker component for React."
 	        ),
 	        _react2.default.createElement(
-	          'h2',
+	          "h2",
 	          null,
-	          'Installation'
+	          "Installation"
 	        ),
 	        _react2.default.createElement(
-	          'p',
+	          "p",
 	          null,
-	          'The package can be installed via NPM:'
+	          "The package can be installed via NPM:"
 	        ),
 	        _react2.default.createElement(
-	          'p',
+	          "p",
 	          null,
 	          _react2.default.createElement(
-	            'code',
+	            "code",
 	            null,
-	            'npm install react-datepicker --save'
+	            "npm install @deskpro/react-datepicker-hijri --save"
 	          )
 	        )
 	      ),
 	      _react2.default.createElement(
-	        'div',
-	        { className: 'wrapper' },
+	        "div",
+	        { className: "wrapper" },
 	        _react2.default.createElement(_example_components2.default, null)
 	      ),
 	      _react2.default.createElement(
-	        'a',
-	        { href: 'https://github.com/Hacker0x01/react-datepicker/' },
-	        _react2.default.createElement('img', { className: 'github-ribbon', src: 'images/ribbon.png', alt: 'Fork me on GitHub' })
+	        "a",
+	        { href: "https://github.com/deskpro/react-datepicker/" },
+	        _react2.default.createElement("img", {
+	          className: "github-ribbon",
+	          src: "images/ribbon.png",
+	          alt: "Fork me on GitHub"
+	        })
 	      )
 	    );
 	  };
@@ -27938,7 +27962,7 @@
 	        _react2.default.createElement(
 	          "code",
 	          { className: "jsx" },
-	          "\n<DatePicker\n    selected={this.state.startDate}\n    onChange={this.handleChange}\n/>\n"
+	          "\n<DatePicker\n    selected={this.state.startDate}\n    onChange={this.handleChange}\n    calendar=\"hijri\"\n/>\n"
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -29098,9 +29122,10 @@
 	        onChange: _this.changeYear,
 	        minDate: _this.props.minDate,
 	        maxDate: _this.props.maxDate,
-	        year: (0, _date_utils.getYear)(_this.state.date),
+	        year: (0, _date_utils.getYear)(_this.state.date, _this.props.calendar),
 	        scrollableYearDropdown: _this.props.scrollableYearDropdown,
-	        yearDropdownItemNumber: _this.props.yearDropdownItemNumber
+	        yearDropdownItemNumber: _this.props.yearDropdownItemNumber,
+	        calendar: _this.props.calendar
 	      });
 	    };
 
@@ -29110,13 +29135,15 @@
 	      if (!_this.props.showMonthDropdown || overrideHide) {
 	        return;
 	      }
+	      console.log(_this.props.dateFormat);
 	      return _react2.default.createElement(_month_dropdown2.default, {
 	        dropdownMode: _this.props.dropdownMode,
 	        locale: _this.props.locale,
 	        dateFormat: _this.props.dateFormat,
 	        onChange: _this.changeMonth,
-	        month: (0, _date_utils.getMonth)(_this.state.date),
-	        useShortMonthInDropdown: _this.props.useShortMonthInDropdown
+	        month: (0, _date_utils.getMonth)(_this.state.date, _this.props.calendar),
+	        useShortMonthInDropdown: _this.props.useShortMonthInDropdown,
+	        calendar: _this.props.calendar
 	      });
 	    };
 
@@ -29422,8 +29449,8 @@
 	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
 	      dropdownVisible: false
 	    }, _this.renderSelectOptions = function () {
-	      var minYear = _this.props.minDate ? (0, _date_utils.getYear)(_this.props.minDate) : 1900;
-	      var maxYear = _this.props.maxDate ? (0, _date_utils.getYear)(_this.props.maxDate) : 2100;
+	      var minYear = (0, _date_utils.minYearByCalendar)(_this.props.minDate, _this.props.calendar);
+	      var maxYear = (0, _date_utils.maxYearByCalendar)(_this.props.maxDate, _this.props.calendar);
 
 	      var options = [];
 	      for (var i = minYear; i <= maxYear; i++) {
@@ -29544,7 +29571,8 @@
 	  yearDropdownItemNumber: _propTypes2.default.number,
 	  date: _propTypes2.default.object,
 	  onSelect: _propTypes2.default.func,
-	  setOpen: _propTypes2.default.func
+	  setOpen: _propTypes2.default.func,
+	  calendar: _propTypes2.default.string
 	};
 	exports.default = YearDropdown;
 
@@ -52948,7 +52976,9 @@
 	          _react2.default.createElement("br", null),
 	          "selected={this.state.startDate}",
 	          _react2.default.createElement("br", null),
-	          "onChange={this.handleChange} />"
+	          "onChange={this.handleChange}",
+	          _react2.default.createElement("br", null),
+	          'calendar="hijri" />'
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -53027,7 +53057,7 @@
 	        _react2.default.createElement(
 	          "code",
 	          { className: "jsx" },
-	          "\n<DatePicker\n  selected={this.state.startDate}\n  onChange={this.handleChange}\n  className=\"red-border\"\n/>\n"
+	          "\n<DatePicker\n  selected={this.state.startDate}\n  onChange={this.handleChange}\n  className=\"red-border\"\n  calendar=\"hijri\"\n/>\n"
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -53106,7 +53136,7 @@
 	        _react2.default.createElement(
 	          "code",
 	          { className: "jsx" },
-	          "\n<DatePicker\n  selected={this.state.startDate}\n  onChange={this.handleChange}\n  calendarClassName=\"rasta-stripes\"\n/>\n"
+	          "\n<DatePicker\n  selected={this.state.startDate}\n  onChange={this.handleChange}\n  calendarClassName=\"rasta-stripes\"\n  calendar=\"hijri\"\n/>\n"
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -53185,7 +53215,7 @@
 	        _react2.default.createElement(
 	          "code",
 	          { className: "jsx" },
-	          "\n<DatePicker\n  selected={this.state.startDate}\n  onChange={this.handleChange}\n  dayClassName={date => date.date() < Math.random() * 31 ? 'random' : undefined} />\n/>\n"
+	          "\n<DatePicker\n  selected={this.state.startDate}\n  onChange={this.handleChange}\n  dayClassName={date => date.date() < Math.random() * 31 ? 'random' : undefined} />\n  calendar=\"hijri\"\n/>\n"
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -53237,13 +53267,13 @@
 	      _react2.default.createElement(
 	        "code",
 	        { className: "jsx" },
-	        '<DatePicker placeholderText="Click to select a date" />'
+	        '<DatePicker placeholderText="Click to select a date" calendar="hijri" />'
 	      )
 	    ),
 	    _react2.default.createElement(
 	      "div",
 	      { className: "column" },
-	      _react2.default.createElement(_reactDatepicker2.default, { placeholderText: "Click to select a date" })
+	      _react2.default.createElement(_reactDatepicker2.default, { placeholderText: "Click to select a date", calendar: "hijri" })
 	    )
 	  );
 	}
@@ -53413,7 +53443,7 @@
 	          _react2.default.createElement(
 	            "strong",
 	            null,
-	            '  locale="en-gb"'
+	            '  locale="ar"'
 	          ),
 	          _react2.default.createElement("br", null),
 	          '  placeholderText="Weeks start on Monday" />'
@@ -53425,7 +53455,7 @@
 	        _react2.default.createElement(_reactDatepicker2.default, {
 	          selected: this.state.startDate,
 	          onChange: this.handleChange,
-	          locale: "en-gb",
+	          locale: "ar",
 	          placeholderText: "Weeks start on Monday",
 	          calendar: "hijri"
 	        })
@@ -53509,7 +53539,9 @@
 	            '  excludeDates={[moment(), moment().subtract(1, "days")]}'
 	          ),
 	          _react2.default.createElement("br", null),
-	          '  placeholderText="Select a date other than today or yesterday" />'
+	          '  placeholderText="Select a date other than today or yesterday" />',
+	          _react2.default.createElement("br", null),
+	          '  calendar="hijri"'
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -54012,7 +54044,9 @@
 	          ),
 	          _react2.default.createElement("br", null),
 	          '  placeholderText="This is disabled"',
-	          " />"
+	          " />",
+	          _react2.default.createElement("br", null),
+	          '  calendar="hijri"'
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -54104,7 +54138,9 @@
 	            "disabledKeyboardNavigation"
 	          ),
 	          _react2.default.createElement("br", null),
-	          'placeholderText="This has disabled keyboard navigation" />'
+	          'placeholderText="This has disabled keyboard navigation" />',
+	          _react2.default.createElement("br", null),
+	          'calendar="hijri"'
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -54184,7 +54220,7 @@
 	        _react2.default.createElement(
 	          "code",
 	          { className: "jsx" },
-	          "\n<DatePicker\n  selected={this.state.startDate}\n  onChange={this.handleChange }\n  isClearable={true}\n  placeholderText=\"I have been cleared!\"\n/>\n"
+	          "\n<DatePicker\n  selected={this.state.startDate}\n  onChange={this.handleChange }\n  isClearable={true}\n  placeholderText=\"I have been cleared!\"\n  calendar=\"hijri\"\n/>\n"
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -54366,7 +54402,7 @@
 	        _react2.default.createElement(
 	          "code",
 	          { className: "jsx" },
-	          "\n<DatePicker\n    selected={this.state.startDate}\n    onChange={this.handleChange}\n    popperClassName=\"some-custom-class\"\n    popperPlacement=\"top-end\"\n    popperModifiers={{\n      offset: {\n        enabled: true,\n        offset: '5px, 10px'\n      },\n      preventOverflow: {\n        enabled: true,\n        escapeWithReference: false, // force popper to stay in viewport (even when input is scrolled out of view)\n        boundariesElement: 'viewport'\n      }\n    }}\n/>\n"
+	          "\n<DatePicker\n    selected={this.state.startDate}\n    onChange={this.handleChange}\n    popperClassName=\"some-custom-class\"\n    popperPlacement=\"top-end\"\n    popperModifiers={{\n      offset: {\n        enabled: true,\n        offset: '5px, 10px'\n      },\n      preventOverflow: {\n        enabled: true,\n        escapeWithReference: false, // force popper to stay in viewport (even when input is scrolled out of view)\n        boundariesElement: 'viewport'\n      }\n    }}\n    calendar=\"hijri\"\n/>\n"
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -54474,7 +54510,7 @@
 	        _react2.default.createElement(
 	          "code",
 	          { className: "jsx" },
-	          "\n<DatePicker\n    selected={this.state.startDate}\n    selectsStart\n    startDate={this.state.startDate}\n    endDate={this.state.endDate}\n    onChange={this.handleChangeStart}\n/>\n\n<DatePicker\n    selected={this.state.endDate}\n    selectsEnd\n    startDate={this.state.startDate}\n    endDate={this.state.endDate}\n    onChange={this.handleChangeEnd}\n/>\n"
+	          "\n<DatePicker\n    selected={this.state.startDate}\n    selectsStart\n    startDate={this.state.startDate}\n    endDate={this.state.endDate}\n    onChange={this.handleChangeStart}\n    calendar=\"hijri\"\n/>\n\n<DatePicker\n    selected={this.state.endDate}\n    selectsEnd\n    startDate={this.state.startDate}\n    endDate={this.state.endDate}\n    onChange={this.handleChangeEnd}\n    calendar=\"hijri\"\n/>\n"
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -54564,7 +54600,7 @@
 	        _react2.default.createElement(
 	          "code",
 	          { className: "jsx" },
-	          "\n<DatePicker\n  selected={this.state.startDate}\n  onChange={this.handleChange}\n  minDate={moment()}\n  maxDate={moment().add(5, \"months\")}\n  showDisabledMonthNavigation />\n</div>\n\n"
+	          "\n<DatePicker\n  selected={this.state.startDate}\n  onChange={this.handleChange}\n  minDate={moment()}\n  maxDate={moment().add(5, \"months\")}\n  showDisabledMonthNavigation\n  calendar=\"hijri\"\n  />\n</div>\n\n"
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -54723,7 +54759,7 @@
 	        _react2.default.createElement(
 	          "code",
 	          { className: "jsx" },
-	          "\n        <DatePicker\n            selected={this.state.startDate}\n            onChange={this.handleChange}\n            showYearDropdown\n            dateFormatCalendar=\"MMMM\"\n            scrollableYearDropdown\n            yearDropdownItemNumber={15}\n        />\n        "
+	          "\n        <DatePicker\n            selected={this.state.startDate}\n            onChange={this.handleChange}\n            showYearDropdown\n            dateFormatCalendar=\"MMMM\"\n            scrollableYearDropdown\n            yearDropdownItemNumber={15}\n            calendar=\"hijri\"\n        />\n        "
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -54735,7 +54771,8 @@
 	          showYearDropdown: true,
 	          dateFormatCalendar: "MMMM",
 	          yearDropdownItemNumber: 15,
-	          scrollableYearDropdown: true
+	          scrollableYearDropdown: true,
+	          calendar: "hijri"
 	        })
 	      )
 	    );
@@ -54804,7 +54841,7 @@
 	        _react2.default.createElement(
 	          "code",
 	          { className: "jsx" },
-	          "\n<DatePicker\n    selected={this.state.startDate}\n    onChange={this.handleChange}\n    showMonthDropdown\n/>\n"
+	          "\n<DatePicker\n    selected={this.state.startDate}\n    onChange={this.handleChange}\n    showMonthDropdown\n    calendar=\"hijri\"\n/>\n"
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -54813,7 +54850,8 @@
 	        _react2.default.createElement(_reactDatepicker2.default, {
 	          selected: this.state.startDate,
 	          onChange: this.handleChange,
-	          showMonthDropdown: true
+	          showMonthDropdown: true,
+	          calendar: "hijri"
 	        })
 	      )
 	    );
@@ -54882,7 +54920,7 @@
 	        _react2.default.createElement(
 	          "code",
 	          { className: "jsx" },
-	          "\n<DatePicker\n  selected={this.state.startDate}\n  onChange={this.handleChange}\n  dateFormatCalendar={\"MMM YYYY\"}\n  minDate={moment().subtract(6, \"month\")}\n  maxDate={moment().add(6, \"month\")}\n  showMonthYearDropdown\n/>\n"
+	          "\n<DatePicker\n  selected={this.state.startDate}\n  onChange={this.handleChange}\n  dateFormatCalendar={\"MMM YYYY\"}\n  minDate={moment().subtract(6, \"month\")}\n  maxDate={moment().add(6, \"month\")}\n  showMonthYearDropdown\n  calendar=\"hijri\"\n/>\n"
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -54894,7 +54932,8 @@
 	          dateFormatCalendar: "MMM YYYY",
 	          minDate: (0, _momentHijri2.default)().subtract(6, "month"),
 	          maxDate: (0, _momentHijri2.default)().add(6, "month"),
-	          showMonthYearDropdown: true
+	          showMonthYearDropdown: true,
+	          calendar: "hijri"
 	        })
 	      )
 	    );
@@ -55042,7 +55081,7 @@
 	        _react2.default.createElement(
 	          "code",
 	          { className: "jsx" },
-	          "\n<DatePicker\n    selected={this.state.startDate}\n    onChange={this.handleChange}\n    peekNextMonth\n    showMonthDropdown\n    showYearDropdown\n    dropdownMode=\"select\"\n/>\n"
+	          "\n<DatePicker\n    selected={this.state.startDate}\n    onChange={this.handleChange}\n    peekNextMonth\n    showMonthDropdown\n    showYearDropdown\n    dropdownMode=\"select\"\n    calendar=\"hijri\"\n/>\n"
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -55054,7 +55093,8 @@
 	          peekNextMonth: true,
 	          showMonthDropdown: true,
 	          showYearDropdown: true,
-	          dropdownMode: "select"
+	          dropdownMode: "select",
+	          calendar: "hijri"
 	        })
 	      )
 	    );
@@ -55123,7 +55163,7 @@
 	        _react2.default.createElement(
 	          "code",
 	          { className: "jsx" },
-	          "\n<DatePicker\n    todayButton={\"Vandaag\"}\n    selected={this.state.startDate}\n    onChange={this.handleChange}\n/>\n"
+	          "\n<DatePicker\n    todayButton={\"Vandaag\"}\n    selected={this.state.startDate}\n    onChange={this.handleChange}\n    calendar=\"hijri\"\n/>\n"
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -55132,7 +55172,8 @@
 	        _react2.default.createElement(_reactDatepicker2.default, {
 	          todayButton: "Vandaag",
 	          selected: this.state.startDate,
-	          onChange: this.handleChange
+	          onChange: this.handleChange,
+	          calendar: "hijri"
 	        })
 	      )
 	    );
@@ -55213,7 +55254,7 @@
 	        _react2.default.createElement(
 	          "code",
 	          { className: "jsx" },
-	          "\n<DatePicker\n    utcOffset=-4\n    dateFormat=\"DD-MMM HH:mm\"\n    todayButton=\"Today in Puerto Rico\"\n    onChange={this.handleChange}\n/>\n"
+	          "\n<DatePicker\n    utcOffset=-4\n    dateFormat=\"DD-MMM HH:mm\"\n    todayButton=\"Today in Puerto Rico\"\n    onChange={this.handleChange}\n    calendar=\"hijri\"\n/>\n"
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -55225,7 +55266,9 @@
 	          showTimeSelect: true,
 	          todayButton: todayTxt,
 	          selected: selected,
-	          onChange: this.handleChange }),
+	          onChange: this.handleChange,
+	          calendar: "hijri"
+	        }),
 	        _react2.default.createElement("br", null),
 	        _react2.default.createElement(
 	          "label",
@@ -55236,7 +55279,8 @@
 	            {
 	              className: "example__timezone-selector",
 	              value: this.state.utcOffset,
-	              onChange: this.handleTmzChange },
+	              onChange: this.handleTmzChange
+	            },
 	            _react2.default.createElement(
 	              "option",
 	              { value: "10" },
@@ -55351,7 +55395,7 @@
 	        _react2.default.createElement(
 	          "code",
 	          { className: "jsx" },
-	          "\n<DatePicker\n    inline\n    selected={this.state.startDate}\n    onChange={this.handleChange}\n/>\n"
+	          "\n          <DatePicker\n            inline\n            selected={this.state.startDate}\n            onChange={this.handleChange}\n            calendar=\"hijri\"/>\n          "
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -55431,7 +55475,7 @@
 	        _react2.default.createElement(
 	          "code",
 	          { className: "jsx" },
-	          "\n<DatePicker\n    openToDate={moment(\"1993-09-28\")}\n    selected={this.state.startDate}\n    onChange={this.handleChange}\n/>\n"
+	          "\n<DatePicker\n    openToDate={moment(\"1993-09-28\")}\n    selected={this.state.startDate}\n    onChange={this.handleChange}\n    calendar=\"hijri\"\n/>\n"
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -55440,7 +55484,8 @@
 	        _react2.default.createElement(_reactDatepicker2.default, {
 	          openToDate: (0, _momentHijri2.default)("1993-09-28"),
 	          selected: this.state.startDate,
-	          onChange: this.handleChange
+	          onChange: this.handleChange,
+	          calendar: "hijri"
 	        })
 	      )
 	    );
@@ -55512,7 +55557,9 @@
 	          _react2.default.createElement("br", null),
 	          "selected={this.state.startDate}",
 	          _react2.default.createElement("br", null),
-	          "onChange={this.handleChange} />"
+	          "onChange={this.handleChange} />",
+	          _react2.default.createElement("br", null),
+	          'calendar="hijri"'
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -55591,7 +55638,7 @@
 	        _react2.default.createElement(
 	          "code",
 	          { className: "jsx" },
-	          "\n<DatePicker\n    selected={this.state.startDate}\n    onChange={this.handleChange}\n    showWeekNumbers\n/>\n"
+	          "\n<DatePicker\n    selected={this.state.startDate}\n    onChange={this.handleChange}\n    showWeekNumbers\n    calendar=\"hijri\"\n/>\n"
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -55600,7 +55647,8 @@
 	        _react2.default.createElement(_reactDatepicker2.default, {
 	          selected: this.state.startDate,
 	          onChange: this.handleChange,
-	          showWeekNumbers: true
+	          showWeekNumbers: true,
+	          calendar: "hijri"
 	        })
 	      )
 	    );
@@ -55699,7 +55747,7 @@
 	        _react2.default.createElement(
 	          "code",
 	          { className: "jsx" },
-	          "\nclass ExampleCustomInput extends React.Component {\n\n  render () {\n    return (\n      <button\n        className=\"example-custom-input\"\n        onClick={this.props.onClick}>\n        {this.props.value}\n      </button>\n    )\n  }\n}\n\nExampleCustomInput.propTypes = {\n  onClick: PropTypes.func,\n  value: PropTypes.string\n};\n\n...\n\n<DatePicker\n  customInput={<ExampleCustomInput />}\n  selected={this.state.startDate}\n  onChange={this.handleChange} />\n"
+	          "\nclass ExampleCustomInput extends React.Component {\n\n  render () {\n    return (\n      <button\n        className=\"example-custom-input\"\n        onClick={this.props.onClick}>\n        {this.props.value}\n      </button>\n    )\n  }\n}\n\nExampleCustomInput.propTypes = {\n  onClick: PropTypes.func,\n  value: PropTypes.string\n};\n\n...\n\n<DatePicker\n  customInput={<ExampleCustomInput />}\n  selected={this.state.startDate}\n  onChange={this.handleChange}\n  calendar=\"hijri\"\n  />\n"
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -55778,7 +55826,7 @@
 	        _react2.default.createElement(
 	          "code",
 	          { className: "jsx" },
-	          "\n<DatePicker\n    selected={this.state.startDate}\n    onChange={this.handleChange}\n    monthsShown={2}\n/>\n"
+	          "\n<DatePicker\n    selected={this.state.startDate}\n    onChange={this.handleChange}\n    monthsShown={2}\n    calendar=\"hijri\"\n/>\n"
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -55787,7 +55835,8 @@
 	        _react2.default.createElement(_reactDatepicker2.default, {
 	          monthsShown: 2,
 	          onChange: this.handleChange,
-	          selected: this.state.startDate
+	          selected: this.state.startDate,
+	          calendar: "hijri"
 	        })
 	      )
 	    );
@@ -55856,7 +55905,7 @@
 	        _react2.default.createElement(
 	          "code",
 	          { className: "jsx" },
-	          "\n<DatePicker\n    selected={this.state.startDate}\n    onChange={this.handleChange}\n    showYearDropdown\n    monthsShown={2}\n/>\n"
+	          "\n<DatePicker\n    selected={this.state.startDate}\n    onChange={this.handleChange}\n    showYearDropdown\n    monthsShown={2}\n    calendar=\"hijri\"\n/>\n"
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -55866,7 +55915,8 @@
 	          monthsShown: 2,
 	          onChange: this.handleChange,
 	          showYearDropdown: true,
-	          selected: this.state.startDate
+	          selected: this.state.startDate,
+	          calendar: "hijri"
 	        })
 	      )
 	    );
@@ -55935,7 +55985,7 @@
 	        _react2.default.createElement(
 	          "code",
 	          { className: "jsx" },
-	          "\n<DatePicker\n    selected={this.state.startDate}\n    inline\n    onChange={this.handleChange}\n    monthsShown={2}\n/>\n"
+	          "\n<DatePicker\n    selected={this.state.startDate}\n    inline\n    onChange={this.handleChange}\n    monthsShown={2}\n    calendar=\"hijri\"\n/>\n"
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -55945,7 +55995,8 @@
 	          monthsShown: 2,
 	          inline: true,
 	          onChange: this.handleChange,
-	          selected: this.state.startDate
+	          selected: this.state.startDate,
+	          calendar: "hijri"
 	        })
 	      )
 	    );
@@ -56014,7 +56065,7 @@
 	        _react2.default.createElement(
 	          "code",
 	          { className: "jsx" },
-	          "\n<DatePicker\n  selected={this.state.startDate}\n  onChange={this.handleChange}\n>\n  <div style={{color: 'red'}}>\n    Don't forget to check the weather!\n  </div>\n</DatePicker>\n"
+	          "\n<DatePicker\n  selected={this.state.startDate}\n  onChange={this.handleChange}\n  calendar=\"hijri\"\n>\n  <div style={{color: 'red'}}>\n    Don't forget to check the weather!\n  </div>\n</DatePicker>\n"
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -56213,7 +56264,7 @@
 	        _react2.default.createElement(
 	          "code",
 	          { className: "jsx" },
-	          "\n<DatePicker\n    selected={this.state.startDate}\n    onChange={this.handleChange}\n    withPortal\n/>\n"
+	          "\n<DatePicker\n    selected={this.state.startDate}\n    onChange={this.handleChange}\n    withPortal\n    calendar=\"hijri\"\n/>\n"
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -56222,7 +56273,8 @@
 	        _react2.default.createElement(_reactDatepicker2.default, {
 	          selected: this.state.startDate,
 	          onChange: this.handleChange,
-	          withPortal: true
+	          withPortal: true,
+	          calendar: "hijri"
 	        })
 	      )
 	    );
@@ -56758,6 +56810,8 @@
 	            '  dateFormat="LLL"'
 	          ),
 	          _react2.default.createElement("br", null),
+	          '  calendar="hijri"',
+	          _react2.default.createElement("br", null),
 	          "/>"
 	        )
 	      ),
@@ -56857,6 +56911,8 @@
 	            _react2.default.createElement("br", null),
 	            '  dateFormat="LLL"'
 	          ),
+	          _react2.default.createElement("br", null),
+	          '  calendar="hijri"',
 	          _react2.default.createElement("br", null),
 	          "/>"
 	        )
@@ -57131,7 +57187,7 @@
 	        _react2.default.createElement(
 	          "code",
 	          { className: "jsx" },
-	          "\n<DatePicker\n    selected={this.state.startDate}\n    onChange={this.handleChange}\n    shouldCloseOnSelect={false}\n/>\n"
+	          "\n<DatePicker\n    selected={this.state.startDate}\n    onChange={this.handleChange}\n    shouldCloseOnSelect={false}\n    calendar=\"hijri\"\n/>\n"
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -57215,7 +57271,8 @@
 	      autoFocus: true,
 	      selected: this.state.startDate,
 	      onChange: this.handleChange,
-	      calendar: "hijri"
+	      calendar: "hijri",
+	      locale: "ar"
 	    });
 	  };
 
