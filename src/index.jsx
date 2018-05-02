@@ -32,7 +32,8 @@ import {
   safeDateFormat,
   getHightLightDaysMap,
   getYear,
-  getMonth
+  getMonth,
+  formatByCalendar
 } from "./date_utils";
 import onClickOutside from "react-onclickoutside";
 
@@ -142,7 +143,8 @@ export default class DatePicker extends React.Component {
     maxTime: PropTypes.object,
     excludeTimes: PropTypes.array,
     useShortMonthInDropdown: PropTypes.bool,
-    clearButtonTitle: PropTypes.string
+    clearButtonTitle: PropTypes.string,
+    calendar: PropTypes.string
   };
 
   static get defaultProps() {
@@ -503,7 +505,10 @@ export default class DatePicker extends React.Component {
         locale={this.props.locale}
         adjustDateOnChange={this.props.adjustDateOnChange}
         setOpen={this.setOpen}
-        dateFormat={this.props.dateFormatCalendar}
+        dateFormat={formatByCalendar(
+          this.props.dateFormatCalendar,
+          this.props.calendar
+        )}
         useWeekdaysShort={this.props.useWeekdaysShort}
         formatWeekDay={this.props.formatWeekDay}
         dropdownMode={this.props.dropdownMode}
@@ -559,6 +564,7 @@ export default class DatePicker extends React.Component {
         timeCaption={this.props.timeCaption}
         className={this.props.calendarClassName}
         yearDropdownItemNumber={this.props.yearDropdownItemNumber}
+        calendar={this.props.calendar}
       >
         {this.props.children}
       </WrappedCalendar>
