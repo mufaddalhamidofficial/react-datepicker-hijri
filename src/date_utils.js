@@ -1,4 +1,4 @@
-import moment from "moment";
+import moment from "moment-hijri";
 
 const dayOfWeekCodes = {
   1: "mon",
@@ -84,13 +84,18 @@ export function formatDate(date, format) {
   return date.format(format);
 }
 
-export function safeDateFormat(date, { dateFormat, locale }) {
+export function safeDateFormat(date, { dateFormat, locale, calendar }) {
   return (
     (date &&
       date
         .clone()
         .locale(locale || moment.locale())
-        .format(Array.isArray(dateFormat) ? dateFormat[0] : dateFormat)) ||
+        .format(
+          formatByCalendar(
+            Array.isArray(dateFormat) ? dateFormat[0] : dateFormat,
+            calendar
+          )
+        )) ||
     ""
   );
 }
@@ -133,21 +138,21 @@ export function getDay(date) {
   return get(date, "day");
 }
 
-export function getWeek(date) {
-  return get(date, "week");
+export function getWeek(date, calendar = "") {
+  return calendar === "hijri" ? date.iWeek() : get(date, "week");
 }
 
-export function getMonth(date) {
-  return get(date, "month");
+export function getMonth(date, calendar = "") {
+  return calendar === "hijri" ? date.iMonth() : get(date, "month");
 }
 
-export function getYear(date) {
-  return get(date, "year");
+export function getYear(date, calendar = "") {
+  return calendar === "hijri" ? date.iYear() : get(date, "year");
 }
 
 // Returns day of month
-export function getDate(date) {
-  return get(date, "date");
+export function getDate(date, calendar = "") {
+  return calendar === "hijri" ? date.iDate() : get(date, "date");
 }
 
 export function getUTCOffset() {
@@ -164,11 +169,14 @@ export function getStartOfDay(date) {
   return getStartOf(date, "day");
 }
 
-export function getStartOfWeek(date) {
+export function getStartOfWeek(date, calendar = "") {
+  if (calendar === "hijri") {
+    return date.day() === 6 ? date : date.day("-1");
+  }
   return getStartOf(date, "week");
 }
-export function getStartOfMonth(date) {
-  return getStartOf(date, "month");
+export function getStartOfMonth(date, calendar = "") {
+  return getStartOf(date, methodByCalendar("month", calendar));
 }
 
 export function getStartOfDate(date) {
@@ -244,16 +252,19 @@ export function equals(date1, date2) {
   return date1.isSame(date2);
 }
 
-export function isSameYear(date1, date2) {
+export function isSameYear(date1, date2, calendar = "") {
   if (date1 && date2) {
-    return date1.isSame(date2, "year");
+    return date1.isSame(date2, methodByCalendar("year", calendar));
   } else {
     return !date1 && !date2;
   }
 }
 
-export function isSameMonth(date1, date2) {
+export function isSameMonth(date1, date2, calendar = "") {
   if (date1 && date2) {
+    if (calendar === "hijri") {
+      return date1.iMonth() === date2.iMonth();
+    }
     return date1.isSame(date2, "month");
   } else {
     return !date1 && !date2;
@@ -520,4 +531,49 @@ export function timesToInjectAfter(
   }
 
   return times;
+}
+
+const capitalize = string => string.charAt(0).toUpperCase() + string.slice(1);
+
+function defaultYearsRange(calendar) {
+  return calendar === "hijri"
+    ? { min: 1300, max: 1500 }
+    : { min: 1900, max: 2100 };
+}
+/**
+ +* @param defaultMethod is on of 'date', 'month' or 'year'
+ +* @param calendar is "hijri" or something else
+ +*
+ +* @return 'iDate','iMonth','iYear' if calendar='hijri'
+ +*/
+export function methodByCalendar(defaultMethod, calendar) {
+  return calendar === "hijri" ? `i${capitalize(defaultMethod)}` : defaultMethod;
+}
+
+export function minYearByCalendar(minDate, calendar) {
+  return minDate
+    ? minDate[methodByCalendar("year", calendar)]()
+    : defaultYearsRange().min;
+}
+
+export function maxYearByCalendar(maxDate, calendar) {
+  return maxDate
+    ? maxDate[methodByCalendar("year", calendar)]()
+    : defaultYearsRange().max;
+}
+
+export function formatByCalendar(dateFormat, calendar) {
+  if (calendar === "hijri") {
+    if (dateFormat === "L" || dateFormat === "MM/DD/YYYY")
+      return "iYYYY/iMM/iDD";
+    if (typeof dateFormat === "string")
+      return dateFormat
+        .replace(`Y`, `iY`)
+        .replace(`M`, "iM")
+        .replace(`D`, "iD");
+    if (Array.isArray(dateFormat))
+      return dateFormat.map(chunck => this.formatByCalendar(chunck, calendar));
+  } else {
+    return dateFormat;
+  }
 }
