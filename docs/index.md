@@ -8,6 +8,7 @@ General datepicker component.
 | `allowSameDay`                | `bool`                         | `false`         |             |
 | `autoComplete`                | `string`                       |                 |             |
 | `autoFocus`                   | `bool`                         |                 |             |
+| `calendar`                    | `string`                       |                 |             |
 | `calendarClassName`           | `string`                       |                 |             |
 | `calendarContainer`           | `func`                         |                 |             |
 | `children`                    | `node`                         |                 |             |
