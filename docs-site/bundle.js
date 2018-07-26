@@ -29135,7 +29135,6 @@
 	      if (!_this.props.showMonthDropdown || overrideHide) {
 	        return;
 	      }
-	      console.log(_this.props.dateFormat);
 	      return _react2.default.createElement(_month_dropdown2.default, {
 	        dropdownMode: _this.props.dropdownMode,
 	        locale: _this.props.locale,

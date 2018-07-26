@@ -441,7 +441,6 @@ export default class Calendar extends React.Component {
     if (!this.props.showMonthDropdown || overrideHide) {
       return;
     }
-    console.log(this.props.dateFormat);
     return (
       <MonthDropdown
         dropdownMode={this.props.dropdownMode}
