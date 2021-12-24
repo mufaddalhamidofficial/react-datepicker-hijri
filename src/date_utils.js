@@ -347,12 +347,20 @@ export function getWeekdayShortInLocale(locale, date) {
 }
 
 // TODO what is this format exactly?
-export function getMonthInLocale(locale, date, format) {
-  return locale.months(date, format);
+export function getMonthInLocale(locale, date, format, calendar = null) {
+  if (calendar == "hijri") {
+    return locale.iMonths(date, format);
+  } else {
+    return locale.months(date, format);
+  }
 }
 
-export function getMonthShortInLocale(locale, date) {
-  return locale.monthsShort(date);
+export function getMonthShortInLocale(locale, date, calendar = null) {
+  if (calendar == "hijri") {
+    return locale.iMonthsShort(date);
+  } else {
+    return locale.monthsShort(date);
+  }
 }
 
 // ** Utils for some components **
