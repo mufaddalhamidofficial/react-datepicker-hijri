@@ -9,6 +9,7 @@ lib
 es
 tmp
 coverage
+docs-site/
 docs-site/bundle.js
 docs-site/style.css
 *.iml
