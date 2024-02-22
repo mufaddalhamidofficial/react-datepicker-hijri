@@ -1,9 +1,13 @@
 language: node_js
 node_js:
   - '14'
+services:
+  - xvfb
 
 before_script:
   - yarn
+  # Needed for Karma test runner
+  - export DISPLAY=:99.0
 script:
   - yarn lint
   - yarn test
