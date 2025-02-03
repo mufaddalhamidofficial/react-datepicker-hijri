@@ -341,12 +341,18 @@ export default class Calendar extends React.Component {
     }
 
     return (
-      <button
-        type="button"
-        className={classes.join(" ")}
-        onClick={clickHandler}
-      >
-        {this.props.previousMonthButtonLabel}
+      <button type="button" className={classes.join(" ")} onClick={clickHandler}>
+        <div
+          style={{
+            borderWidth: "3px 3px 0 0",
+            borderStyle: "solid",
+            borderColor: "#ccc",
+            transform: "rotate(225deg)",
+            height: "9px",
+            width: "9px",
+            marginLeft: 6,
+          }}
+        />
       </button>
     );
   };
@@ -386,12 +392,18 @@ export default class Calendar extends React.Component {
     }
 
     return (
-      <button
-        type="button"
-        className={classes.join(" ")}
-        onClick={clickHandler}
-      >
-        {this.props.nextMonthButtonLabel}
+      <button type="button" className={classes.join(" ")} onClick={clickHandler}>
+        <div
+          style={{
+            borderWidth: "3px 3px 0 0",
+            borderStyle: "solid",
+            borderColor: "#ccc",
+            transform: "rotate(45deg)",
+            height: "9px",
+            width: "9px",
+            marginLeft: 6,
+          }}
+        />
       </button>
     );
   };
@@ -506,16 +518,26 @@ export default class Calendar extends React.Component {
           className="react-datepicker__month-container"
         >
           <div className="react-datepicker__header">
-            {this.renderCurrentMonth(monthDate)}
             <div
+              style={{
+                direction: "ltr",
+                display: "flex",
+                flexDirection: this.props.calendar === "hijri" ? "row-reverse" : "row",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              {this.renderCurrentMonth(monthDate)}
+              <div
               className={`react-datepicker__header__dropdown react-datepicker__header__dropdown--${
                 this.props.dropdownMode
               }`}
-              onFocus={this.handleDropdownFocus}
-            >
-              {this.renderMonthDropdown(i !== 0)}
-              {this.renderMonthYearDropdown(i !== 0)}
-              {this.renderYearDropdown(i !== 0)}
+                onFocus={this.handleDropdownFocus}
+              >
+                {this.renderMonthDropdown(i !== 0)}
+                {this.renderMonthYearDropdown(i !== 0)}
+                {this.renderYearDropdown(i !== 0)}
+              </div>
             </div>
             <div className="react-datepicker__day-names">
               {this.header(monthDate)}
@@ -589,9 +611,9 @@ export default class Calendar extends React.Component {
           "react-datepicker--time-only": this.props.showTimeSelectOnly
         })}
       >
+        {this.renderMonths()}
         {this.renderPreviousMonthButton()}
         {this.renderNextMonthButton()}
-        {this.renderMonths()}
         {this.renderTodayButton()}
         {this.renderTimeSection()}
         {this.props.children}

@@ -62,10 +62,22 @@ export default class YearDropdown extends React.Component {
       className="react-datepicker__year-read-view"
       onClick={event => this.toggleDropdown(event)}
     >
-      <span className="react-datepicker__year-read-view--down-arrow" />
+       <div
+        style={{
+          borderWidth: "3px 3px 0 0",
+          borderStyle: "solid",
+          borderColor: "#ccc",
+          transform: "rotate(135deg)",
+          height: "9px",
+          width: "9px",
+          marginLeft: this.props.calendar === "hijri" ? 0 : 6,
+          marginRight: this.props.calendar === "hijri" ? 6 : 0,
+        }}
+      />
+      {/* <span className="react-datepicker__year-read-view--down-arrow" />
       <span className="react-datepicker__year-read-view--selected-year">
         {this.props.year}
-      </span>
+      </span> */}
     </div>
   );
 
@@ -80,6 +92,7 @@ export default class YearDropdown extends React.Component {
       maxDate={this.props.maxDate}
       scrollableYearDropdown={this.props.scrollableYearDropdown}
       yearDropdownItemNumber={this.props.yearDropdownItemNumber}
+      calendar={this.props.calendar}
     />
   );
 

@@ -1,19 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
+import { maxYearByCalendar, methodByCalendar, minYearByCalendar } from "./date_utils"
 
-function generateYears(year, noOfYear, minDate, maxDate) {
+function generateYears(year, noOfYear, minDate, maxDate, calendar) {
   var list = [];
   for (var i = 0; i < 2 * noOfYear + 1; i++) {
     const newYear = year + noOfYear - i;
     let isInRange = true;
 
     if (minDate) {
-      isInRange = minDate.year() <= newYear;
+      isInRange = minYearByCalendar(minDate, calendar) <= newYear
     }
 
     if (maxDate && isInRange) {
-      isInRange = maxDate.year() >= newYear;
+      isInRange = maxYearByCalendar(maxDate, calendar) >= newYear
     }
 
     if (isInRange) {
@@ -32,7 +33,8 @@ export default class YearDropdownOptions extends React.Component {
     onChange: PropTypes.func.isRequired,
     scrollableYearDropdown: PropTypes.bool,
     year: PropTypes.number.isRequired,
-    yearDropdownItemNumber: PropTypes.number
+    yearDropdownItemNumber: PropTypes.number,
+    calendar: PropTypes.string,
   };
 
   constructor(props) {
@@ -46,7 +48,8 @@ export default class YearDropdownOptions extends React.Component {
         this.props.year,
         noOfYear,
         this.props.minDate,
-        this.props.maxDate
+        this.props.maxDate,
+        this.props.calendar
       )
     };
   }
@@ -73,8 +76,8 @@ export default class YearDropdownOptions extends React.Component {
       </div>
     ));
 
-    const minYear = this.props.minDate ? this.props.minDate.year() : null;
-    const maxYear = this.props.maxDate ? this.props.maxDate.year() : null;
+    const minYear = this.props.minDate ? this.props.minDate[methodByCalendar("year", this.props.calendar)]() : null
+    const maxYear = this.props.maxDate ? this.props.maxDate[methodByCalendar("year", this.props.calendar)]() : null
 
     if (!maxYear || !this.state.yearsList.find(year => year === maxYear)) {
       options.unshift(
@@ -124,11 +127,11 @@ export default class YearDropdownOptions extends React.Component {
   };
 
   incrementYears = () => {
-    return this.shiftYears(1);
+    return this.shiftYears(10);
   };
 
   decrementYears = () => {
-    return this.shiftYears(-1);
+    return this.shiftYears(-10);
   };
 
   render() {
